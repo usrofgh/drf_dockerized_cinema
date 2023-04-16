@@ -12,7 +12,7 @@ git clone https://github.com/usrofgh/drf_dockerized_cinema.git cinema
 cd cinema
 python -m venv venv
 source venv/Scripts/activate
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 Inside the directory you'll see `.env.sample` <br>
