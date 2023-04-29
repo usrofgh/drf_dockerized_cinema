@@ -1,4 +1,6 @@
 import os
+from django.utils.text import slugify
+import uuid
 
 
 def movie_image_file_path(instance, filename):
