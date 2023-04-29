@@ -4,7 +4,7 @@
 ## Installation
 <hr>
 
-Clone you repository <br>
+Clone the repository <br>
 If want - specify another folder name where `cinema`
 
 ```shell
