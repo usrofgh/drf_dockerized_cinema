@@ -34,7 +34,7 @@ class GenreViewSet(
     mixins.ListModelMixin,
     GenericViewSet,
 ):
-    queryset = Genre.objects.all()
+    queryset = Genre.objects
     serializer_class = GenreSerializer
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
@@ -44,7 +44,7 @@ class ActorViewSet(
     mixins.ListModelMixin,
     GenericViewSet,
 ):
-    queryset = Actor.objects.all()
+    queryset = Actor.objects
     serializer_class = ActorSerializer
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 
@@ -54,7 +54,7 @@ class CinemaHallViewSet(
     mixins.ListModelMixin,
     GenericViewSet,
 ):
-    queryset = CinemaHall.objects.all()
+    queryset = CinemaHall.objects
     serializer_class = CinemaHallSerializer
     permission_classes = (IsAdminOrIfAuthenticatedReadOnly,)
 

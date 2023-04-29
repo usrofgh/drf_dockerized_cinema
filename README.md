@@ -31,7 +31,7 @@ Next, we'll build django-service, pull psql from docker-hub, create DB, apply mi
 with help next command
 
 ```shell
-docker-compose up -d
+docker-compose up
 ```
 For use all features of this project you need create a user
 ```shell
@@ -68,3 +68,12 @@ Specify all necessary data and specify(!) 5433 port
 - CRUD for resources through API and admin panel
 - Filter movies by genres, actors, title
 
+
+## Endpoints
+<hr>
+
+#### Cinema
+![cinema_demo_swagger.png](cinema_demo_swagger.png)
+
+#### User
+![user_demo_swagger.png](user_demo_swagger.png)
