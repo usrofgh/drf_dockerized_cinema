@@ -11,7 +11,8 @@ If want - specify another folder name where `cinema`
 git clone https://github.com/usrofgh/drf_dockerized_cinema.git cinema
 cd cinema
 python -m venv venv
-source venv/Scripts/activate
+(windows) source venv/Scripts/activate
+(linux) source venv/bin/activate
 pip install -r requirements.txt
 ```
 
