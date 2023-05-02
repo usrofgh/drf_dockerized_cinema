@@ -11,28 +11,35 @@ If want - specify another folder name where `cinema`
 git clone https://github.com/usrofgh/drf_dockerized_cinema.git cinema
 cd cinema
 python -m venv venv
-(windows) source venv/Scripts/activate
-(linux) source venv/bin/activate
 pip install -r requirements.txt
-```
-
-Inside the directory you'll see `.env.sample` <br>
-It's an example which data must
-contain `.env` file which you need to create and fill
 
 ```
-# .env.sample
-POSTGRES_HOST=POSTGRES_HOST
-POSTGRES_DB=POSTGRES_DB
-POSTGRES_USER=POSTGRES_USER
-POSTGRES_PASSWORD=POSTGRES_PASSWORD
+#### Linux:
+```shell
+source venv/bin/activate
+export POSTGRES_HOST=POSTGRES_HOST
+export POSTGRES_DB=POSTGRES_DB
+export POSTGRES_USER=POSTGRES_USER
+export POSTGRES_PASSWORD=POSTGRES_PASSWORD
+export SECRET_KEY=SECRET_KEY
+export DEBUG=True
 ```
-
-Next, we'll build django-service, pull psql from docker-hub, create DB, apply migrations
-with help next command
+#### Windows
+```shell
+source venv\Scripts\activate
+SET venv/bin/activate
+SET POSTGRES_HOST=POSTGRES_HOST
+SET POSTGRES_DB=POSTGRES_DB
+SET POSTGRES_USER=POSTGRES_USER
+SET POSTGRES_PASSWORD=POSTGRES_PASSWORD
+SET SECRET_KEY=SECRET_KEY
+SET DEBUG=True
+```
+Next
 
 ```shell
-docker-compose up
+docker-compose build
+docker compose up
 ```
 For use all features of this project you need create a user
 ```shell
