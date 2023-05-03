@@ -10,32 +10,41 @@ If want - specify another folder name where `cinema`
 ```shell
 git clone https://github.com/usrofgh/drf_dockerized_cinema.git cinema
 cd cinema
-python -m venv venv
-pip install -r requirements.txt
-
 ```
+
+### Local run
 #### Linux:
 ```shell
+python -m venv venv
 source venv/bin/activate
-export POSTGRES_HOST=POSTGRES_HOST
-export POSTGRES_DB=POSTGRES_DB
-export POSTGRES_USER=POSTGRES_USER
-export POSTGRES_PASSWORD=POSTGRES_PASSWORD
-export SECRET_KEY=SECRET_KEY
+pip install -r requirements.txt
+export POSTGRES_HOST=your_POSTGRES_HOST
+export POSTGRES_DB=your_POSTGRES_DB
+export POSTGRES_USER=your_POSTGRES_USER
+export POSTGRES_PASSWORD=your_POSTGRES_PASSWORD
+export SECRET_KEY=your_SECRET_KEY
 export DEBUG=True
 ```
+
 #### Windows
 ```shell
-source venv\Scripts\activate
-SET venv/bin/activate
-SET POSTGRES_HOST=POSTGRES_HOST
-SET POSTGRES_DB=POSTGRES_DB
-SET POSTGRES_USER=POSTGRES_USER
-SET POSTGRES_PASSWORD=POSTGRES_PASSWORD
-SET SECRET_KEY=SECRET_KEY
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+SET POSTGRES_HOST=your_POSTGRES_HOST
+SET POSTGRES_DB=your_POSTGRES_DB
+SET POSTGRES_USER=your_POSTGRES_USER
+SET POSTGRES_PASSWORD=your_POSTGRES_PASSWORD
+SET SECRET_KEY=your_SECRET_KEY
 SET DEBUG=True
 ```
-Next
+
+```shell
+python manage.py runserver
+```
+<hr>
+
+### Docker run
 
 ```shell
 docker-compose build
