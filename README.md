@@ -13,7 +13,10 @@ cd cinema
 ```
 
 ### Local run
+<hr>
+
 #### Linux:
+
 ```shell
 python -m venv venv
 source venv/bin/activate
@@ -66,6 +69,8 @@ Fine. You can use the project
 
 <hr>
 If you wish you can connect DB for viewing the tables
+
+Postgres DB should be created for connecting
 <br>
 
 ```
