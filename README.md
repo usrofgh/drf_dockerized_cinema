@@ -34,7 +34,7 @@ export DEBUG=True
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-SET POSTGRES_HOST=your_POSTGRES_HOST
+SET POSTGRES_HOST=localhost
 SET POSTGRES_DB=your_POSTGRES_DB
 SET POSTGRES_USER=your_POSTGRES_USER
 SET POSTGRES_PASSWORD=your_POSTGRES_PASSWORD
@@ -45,6 +45,8 @@ SET DEBUG=True
 ```shell
 python manage.py runserver
 ```
+Fine. You can use the project
+[http://127.0.0.1:8000/api/cinema/](http://127.0.0.1:8000/api/cinema/)
 <hr>
 
 ### Docker run
@@ -55,7 +57,7 @@ docker compose up
 ```
 For use all features of this project you need create a user
 ```shell
-docker exec -it drf_dockerized_cinema-app-1 bash
+docker exec -it <cinema_app_name> bash
 python manage.py createsuperuser
 ```
 After creating can exit
